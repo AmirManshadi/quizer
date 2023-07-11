@@ -2,7 +2,6 @@ import * as React from 'react';
 import cls from 'classnames';
 import classes from './QuestionCard.module.css';
 import Answers from './Answers';
-import Button from './Button';
 import CodeSection from './CodeSection';
 import Option from './Option';
 import Question from './Question';
@@ -15,7 +14,6 @@ export type Props = Omit<React.ComponentPropsWithRef<'div'>, keyof OwnProps> & O
 
 const QuestionCardBase = (props: Props, ref: React.Ref<HTMLDivElement>) => {
   const {className, ...otherProps} = props;
-  
   return <div {...otherProps} className={cls(className, classes.root)} ref={ref}>
     <Question/>
 
@@ -29,8 +27,8 @@ const QuestionCardBase = (props: Props, ref: React.Ref<HTMLDivElement>) => {
     </Answers>
 
     <div>
-      <Button/>
-      <Button/>
+      <button/>
+      <button/>
     </div>
   </div>
 };

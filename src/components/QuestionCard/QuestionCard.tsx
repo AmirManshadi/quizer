@@ -27,8 +27,8 @@ const QuestionCardBase = (props: Props, ref: React.Ref<HTMLDivElement>) => {
     </Answers>
 
     <div>
-      <button/>
-      <button/>
+      <button></button>
+      <button></button>
     </div>
   </div>
 };
